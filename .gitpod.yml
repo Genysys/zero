@@ -1,0 +1,13 @@
+image: cosmwasm/cw-gitpod-base:v0.16
+
+vscode:
+  extensions:
+    - matklad.rust-analyzer
+
+tasks:
+  - name: Dependencies & Build
+    init: |
+      cargo build
+  - name: Tests
+    init: |
+      cargo test
